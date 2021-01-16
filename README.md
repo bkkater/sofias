@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+<p align="center">
+   <img src="./assets/logo.png" width="280"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">	
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/bkkater/sofias?color=6CBAD9&style=for-the-badge">
 
-## Available Scripts
+  <a aria-label="Completed" href="https://hackathon.polinize.com/">
+    <img src="https://img.shields.io/badge/Hackathon -CCR-6CBAD9?style=for-the-badge"></img>
+  </a>
+  <a href="https://github.com/bkkater/casa-optimize/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/bkkater/sofias?color=6CBAD9&style=for-the-badge">
+  </a> 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-6CBAD9?style=for-the-badge">
+</p>
 
-In the project directory, you can run:
+Descrição
 
-### `yarn start`
+<div align="center">
+  <sub>Built by
+    <a>Sofias</a>
+  </sub>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# :pushpin: Tabela de Conteúdo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [Tecnologias](#computer-tecnologias)
+* [Funcionalidades](#rocket-funcionalidades)
+* [Repositórios](#computer-Repositórios)
+* [Como rodar](#construction_worker-como-rodar)
+* [Equipe](#equipe)
+* [License](#closed_book-license)
+* [Equipe](#bulb-Equipe)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 📥 Layout disponivel em:  
+<p align="center">
+    <a title=".fig Mobile" href="https://www.figma.com/file/COuTfekgKpb2bBdkCH9gVe/Casa-Optimize?node-id=0%3A1">
+        <img alt="Figma" src="https://img.shields.io/badge/Versão Web-black?style=flat-square&logo=figma&logoColor=red" width="215px"/>
+    </a>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Mobile Screenshot
+<div style="display: flex; flex-direction: 'row';">
+   <img src="./.github/mockup.png" width="360">
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# :computer: Tecnologias
+Esse projeto foi feito utilizando as seguintes tecnologias:
+<details>
+  <summary>Mobile</summary>
 
-### `yarn eject`
+-   [React](https://pt-br.reactjs.org/)
+-   [Javascript](https://www.javascript.com/)
+-   [Axios](https://www.npmjs.com/package/axios)
+-   [VS Code](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+</details>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# :rocket: Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Funcionalidade 1.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Funcionalidade 2.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# :computer: Repositórios
+-   [API](https://github.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# :construction_worker: Como rodar
+```bash
+# Clone o Repositório
+$ git clone https://github.com/bkkater/sofias.git
+```
 
-### Code Splitting
+### 📱 Run Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Vá para a pasta sofias
+$ cd sofias
+# Instale as depedencias
+$ yarn install
+# Rode a aplicação
+$ yarn start
+```
 
-### Analyzing the Bundle Size
+# :bulb: Equipe
+- [Bianca](https://github.com/bkkater)
+- [Paulo](https://www.linkedin.com/in/paulodocarmo/)
+- [Rodrigo](https://www.linkedin.com/in/rodrigo-de-araújo-temóteo-42020317/)
+- [Jhennifer](https://www.linkedin.com/in/jhennifer-pimentel-0518171b2/)
+- [Eduarda](https://www.linkedin.com/in/eduarda-barboza-tavares-612a55159/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# :closed_book: LICENSE
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esse projeto está sobre [MIT license](./LICENSE).
