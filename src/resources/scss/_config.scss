@@ -1,0 +1,38 @@
+// Typography
+$base-font-family: 'Ubuntu', sans-serif;
+$base-font-size: 0.9rem;
+$base-font-weight: 500;
+$base-line-height: 1.6;
+
+// Colors
+$base-text-color: #fff;
+
+$color-gray-100: #eeeeee;
+$color-gray-200: #dddddd;
+$color-gray-300: #bbbbbb;
+$color-gray-400: #999999;
+$color-gray-500: #777777;
+$color-gray-600: #555555;
+$color-gray-700: #333333;
+$color-gray-800: #222222;
+
+/*---------------------------------------
+  TYPOGRAPHY
+---------------------------------------*/
+$h1-font: 700 60px/72px $base-font-family;
+$h1-color: $color-gray-800;
+
+$h2-font: 700 48px/60px $base-font-family;
+$h2-color: $color-gray-700;
+
+$h3-font: 500 36px/44px $base-font-family;
+$h3-color: $color-gray-700;
+
+$h4-font: 500 24px/32px $base-font-family;
+$h4-color: $color-gray-700;
+
+$h5-font: 400 21px/30px $base-font-family;
+$h5-color: $color-gray-600;
+
+$h6-font: 400 20px/26px $base-font-family;
+$h6-color: $color-gray-800;

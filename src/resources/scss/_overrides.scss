@@ -1,0 +1,17 @@
+body {
+  background-repeat: no-repeat;
+}
+
+button {
+  &:focus {
+    outline: 0 !important;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
