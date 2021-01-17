@@ -33,7 +33,7 @@ function Home() {
         fullWidth
       />
 
-      <div className="d-flex flex-fill align-items-end justify-content-center">
+      <div className="d-flex card__location__container mt-5 justify-content-center">
         <LocationCard />
       </div>
     </Page>

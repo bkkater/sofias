@@ -1,7 +1,7 @@
 .card {
   &__list {
     padding-bottom: 40px;
-    overflow: auto;
+    overflow-x: auto;
 
     &::-webkit-scrollbar {
       -webkit-appearance: none;
