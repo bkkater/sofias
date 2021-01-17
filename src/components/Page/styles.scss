@@ -3,15 +3,16 @@
 
   overflow: auto;
 
-  &--login {
+  &--login,
+  &--register {
     h4 {
-      color: white;
+      color: white !important;
     }
   }
-}
 
-h4 {
-  font-size: 1.2rem;
-  color: #24004a;
-  font-weight: 600 !important;
+  h4 {
+    font-size: 1.2rem;
+    color: #24004a;
+    font-weight: 600 !important;
+  }
 }

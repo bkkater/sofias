@@ -11,7 +11,11 @@ import './styles.scss';
 function Header() {
   const location = useLocation();
 
-  if (location.pathname === '/login') {
+  if (
+    location.pathname === '/login' ||
+    location.pathname === '/register' ||
+    location.pathname === '/register/step'
+  ) {
     return <img src={fullLogo} alt="Sofias" className="fullLogo mb-5" />;
   }
 
