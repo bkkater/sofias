@@ -1,0 +1,20 @@
+.card {
+  &__list {
+    padding-bottom: 40px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      height: 8px;
+      width: 10px;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      background-color: rgba(172, 172, 172, 0.342);
+    }
+  }
+}

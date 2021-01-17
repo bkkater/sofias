@@ -1,0 +1,55 @@
+.card__item {
+  background: linear-gradient(
+    180deg,
+    rgba(87, 10, 169, 0.792) 0%,
+    rgba(78, 20, 140, 0.828) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  position: relative;
+
+  min-width: 164px;
+  height: 154px;
+
+  margin-right: 1.5rem;
+
+  color: white;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--full-width {
+    margin-right: 0;
+    span {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  span,
+  p {
+    font-family: 'Ubuntu';
+    display: block;
+    margin: 20px 0 0 20px;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  img {
+    position: absolute;
+    margin-bottom: -15px;
+
+    bottom: -15px;
+    right: -15px;
+  }
+}

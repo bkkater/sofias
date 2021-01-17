@@ -1,0 +1,24 @@
+.input {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 58px;
+  flex: 1;
+  padding: 0 15px;
+
+  input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+  }
+}
+
+button {
+  background-color: #ffc759;
+
+  border: none;
+  border-radius: 5px !important;
+  margin-left: 10px !important;
+  height: 58px;
+
+  padding: 0 20px;
+}
