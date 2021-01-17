@@ -4,7 +4,7 @@ import { SiMailDotRu } from 'react-icons/si';
 
 import './styles.scss';
 
-function Field({ type, label, placeholder, className }) {
+function Field({ type, label, placeholder, className, onChange }) {
   const icon =
     (type === 'email' && <SiMailDotRu size={20} />) ||
     (type === 'password' && <FiKey size={20} />) ||
@@ -18,6 +18,7 @@ function Field({ type, label, placeholder, className }) {
         {icon}
         <input
           placeholder={placeholder}
+          onChange={onChange}
           type={type === 'date' || type === 'name' ? '' : type}
         />
       </div>
