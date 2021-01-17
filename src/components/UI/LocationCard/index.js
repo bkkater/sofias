@@ -3,16 +3,16 @@ import { FiChevronRight, FiMapPin } from 'react-icons/fi';
 
 import './styles.scss';
 
-function LocationCard() {
+function LocationCard({ label, description, className }) {
   return (
-    <button className="card__location d-flex align-items-center">
+    <button className={`${className} card__location d-flex align-items-center`}>
       <div className="card__location__icon ml-2">
         <FiMapPin size={20} color="#FFC759" />
       </div>
 
       <div className="ml-1 flex-fill">
-        <h6>Escolha a sua localização</h6>
-        <p>vamos oferecer conteúdos melhores para você</p>
+        <h6>{label}</h6>
+        {description && <p>{description}</p>}
       </div>
 
       <button className="button__icon">

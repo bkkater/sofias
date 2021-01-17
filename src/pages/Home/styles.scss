@@ -6,6 +6,10 @@
   }
 
   .card {
+    &__item {
+      padding-top: 2px;
+    }
+
     &__list {
       padding-bottom: 40px;
       overflow-x: auto;
