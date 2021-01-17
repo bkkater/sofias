@@ -69,14 +69,14 @@ function SecondStep() {
 
           <div>
             <h6>Termos e condições</h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="radio"
                 name="flexRadioDisabled"
                 id="flexRadioDisabled"
               />
-              <label class="form-check-label" htmlFor="flexRadioDisabled">
+              <label className="form-check-label" htmlFor="flexRadioDisabled">
                 Concordo que li e aceito os <b>termos e condições</b> de
                 utilização do Sofias.
               </label>
