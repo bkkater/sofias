@@ -2,6 +2,12 @@
   height: 100vh;
 
   overflow: auto;
+
+  &--login {
+    h4 {
+      color: white;
+    }
+  }
 }
 
 h4 {
