@@ -32,7 +32,7 @@ function Login() {
           <Link className="button__goBack mb-4 font-weight-normal" to="/">
             voltar
           </Link>
-          <Button label="Acessar" />
+          <Button label="Acessar" nextRoute="/" />
         </div>
       </div>
     </Page>
