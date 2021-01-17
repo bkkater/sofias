@@ -27,15 +27,15 @@ function SecondStep() {
       setStates(array);
     });
   }, []);
-  
-   useEffect(() => {
-     geoApi.get(`/${selectedUF}/distritos`).then((response) => {
-       let array = response.data.map((state) => {
-         return { value: state.municipio.nome, label: state.municipio.nome };
-       });
-       setCities(array);
-     });
-   }, [selectedUF]);
+
+  useEffect(() => {
+    geoApi.get(`/${selectedUF}/distritos`).then((response) => {
+      let array = response.data.map((state) => {
+        return { value: state.municipio.nome, label: state.municipio.nome };
+      });
+      setCities(array);
+    });
+  }, [selectedUF]);
 
   function finalizar() {
     let firstName = localStorage.getItem("firstName");
@@ -74,10 +74,10 @@ function SecondStep() {
             options={states}
             placeholder="Selecione a UF do seu estado"
             label="UF"
-            onChange={e => {
-              setCities([])
-              setSelectedUF(e.value)}
-            }
+            onChange={(e) => {
+              setCities([]);
+              setSelectedUF(e.value);
+            }}
           />
 
           <SelectComponent
@@ -102,14 +102,14 @@ function SecondStep() {
 
           <div>
             <h6>Termos e condições</h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="radio"
                 name="flexRadioDisabled"
                 id="flexRadioDisabled"
               />
-              <label class="form-check-label" for="flexRadioDisabled">
+              <label className="form-check-label" htmlFor="flexRadioDisabled">
                 Concordo que li e aceito os <b>termos e condições</b> de
                 utilização do Sofias.
               </label>
