@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Page from '~/components/Page';
 import Card from '~/components/UI/Card';
@@ -12,12 +12,18 @@ import './styles.scss';
 import LocationCard from '~/components/UI/LocationCard';
 
 function Home() {
+  const [isLogged, setLogged] = useState(true);
+
   return (
-    <Page title="Escolha uma área">
+    <Page
+      title={isLogged ? 'Navegue' : 'Escolha uma área'}
+      className="page--home"
+    >
       <div className="d-flex flex-column justify-content-between flex-fill">
         <div>
           <Search />
 
+          {isLogged && <h5 className="mt-4">Recomendados</h5>}
           <div className="d-flex mt-3 mb-3 card__list">
             {cardList.map((cardList) => (
               <Card
