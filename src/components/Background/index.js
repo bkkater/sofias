@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 // Assets
 import background from '~/resources/assets/background-desktop.png';
@@ -12,6 +13,17 @@ import './styles.scss';
 
 function Background() {
   const { width } = useWindowDimensions();
+
+  const location = useLocation();
+
+  if (location.pathname === '/login') {
+    return (
+      <div className="bg">
+        <img src={width > 700 ? background : mobile_background} alt="" />
+        <div className="bg--purple"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="bg">
