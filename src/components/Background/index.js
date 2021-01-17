@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 // Assets
 import background from '~/resources/assets/background-desktop.png';
