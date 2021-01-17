@@ -1,24 +1,25 @@
 /*---------------------------------------
   FONT
 ---------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
 
 /*---------------------------------------
   BOOTSTRAP
 ---------------------------------------*/
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 /*---------------------------------------
   CONFIG
 ---------------------------------------*/
-@import 'config';
+@import "config";
 
 /*---------------------------------------
   BASE
 ---------------------------------------*/
-@import 'base';
+@import "base";
 
 /*---------------------------------------
   OVERRRIDES
 ---------------------------------------*/
-@import 'overrides';
+@import "overrides";

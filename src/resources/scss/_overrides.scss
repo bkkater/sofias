@@ -4,14 +4,10 @@ body {
 
 button {
   &:focus {
-    outline: 0 !important;
+    outline: 0;
   }
 
   &:disabled {
     cursor: default;
   }
-}
-
-a {
-  text-decoration: none !important;
 }
