@@ -21,6 +21,7 @@ function Field({ type, label, placeholder, className, onChange }) {
           onChange={onChange}
           type={type === 'date' || type === 'name' ? '' : type}
           className="flex-fill"
+          required
         />
       </div>
     </div>
