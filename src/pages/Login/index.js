@@ -25,11 +25,16 @@ function Login() {
       .request(options)
       .then(function (response) {
         console.log(response.data);
-        localStorage.setItem('token', response.data.data.token);
-        history.push('/');
+        if(response.data.data.token != null) {
+          localStorage.setItem('token', response.data.data.token);
+          history.push('/');
+        } else {
+          window.alert('Usuario ou senha incorretos');
+        }
       })
       .catch(function (error) {
         console.error(error);
+          window.alert('Usuario ou senha incorretos');
       });
   }
 
@@ -59,7 +64,7 @@ function Login() {
           <Link className="button__goBack mb-4 font-weight-normal" to="/">
             voltar
           </Link>
-          <Button label="Acessar" nextRoute="/" onClick={handleLogin} />
+          <Button label="Acessar" onClick={handleLogin} />
         </div>
       </div>
     </Page>
