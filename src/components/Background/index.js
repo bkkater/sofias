@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react';
+import Image from 'next/image';
 
-import background from "~/resources/assets/background-desktop.png";
-import mobile_background from "~/resources/assets/background-mobile.png";
+// Assets
+import background from '~/resources/assets/background-desktop.png';
+import mobile_background from '~/resources/assets/background-mobile.png';
 
-import useWindowDimensions from "~/hooks/getWindowDimensions";
+// Hooks
+import useWindowDimensions from '~/hooks/getWindowDimensions';
 
-import "./styles.scss";
+// Style
+import './styles.scss';
 
 function Background() {
   const { width } = useWindowDimensions();

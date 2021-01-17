@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import Head from "next/head";
-import Background from "../Background";
-import Header from "../Header";
+import Head from 'next/head';
+import Background from '../Background';
+import Header from '../Header';
 
-import "./styles.scss";
+import './styles.scss';
 
 const Page = ({ className, title, children }) => {
   return (
     <>
       <Background />
       <div
-        className={`container page d-flex flex-column flex-fill py-4 ${className}`}
+        className={`container page d-flex flex-column flex-fill py-4 px-3 ${className}`}
       >
         {title && (
           <>
