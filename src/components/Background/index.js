@@ -16,7 +16,11 @@ function Background() {
 
   const location = useLocation();
 
-  if (location.pathname === '/login') {
+  if (
+    location.pathname === '/login' ||
+    location.pathname === '/register' ||
+    location.pathname === '/register/step'
+  ) {
     return (
       <div className="bg">
         <img src={width > 700 ? background : mobile_background} alt="" />

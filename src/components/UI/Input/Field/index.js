@@ -19,6 +19,7 @@ function Field({ type, label, placeholder, className }) {
         <input
           placeholder={placeholder}
           type={type === 'date' || type === 'name' ? '' : type}
+          className="flex-fill"
         />
       </div>
     </div>
