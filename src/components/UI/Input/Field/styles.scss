@@ -1,0 +1,21 @@
+.input {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 58px;
+  padding: 0 15px;
+  flex: none;
+
+  input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+  }
+}
+
+.input__container {
+  h6 {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
