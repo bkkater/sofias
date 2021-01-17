@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Page from '~/components/Page';
 import Field from '~/components/UI/Input/Field';
@@ -7,12 +7,15 @@ import Button from '~/components/UI/Button';
 import SelectComponent from '~/components/UI/Select';
 
 import geoApi from '~/services/geo';
+import api from '~/services/api';
 
 import './styles.scss';
 
 function SecondStep() {
+  const history = useHistory();
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
+  const [password, setPassword] = useState("");
   const [selectedUF, setSelectedUF] = useState("");
 
   useEffect(() => {
@@ -33,6 +36,35 @@ function SecondStep() {
        setCities(array);
      });
    }, [selectedUF]);
+
+  function finalizar() {
+    let firstName = localStorage.getItem("firstName");
+    let lastName = localStorage.getItem("lastName");
+    let email = localStorage.getItem("email");
+    let birthdayDate = localStorage.getItem("birthday_date");
+    let topic = localStorage.getItem("topic");
+    const options = {
+      method: 'POST',
+      url: '/auth/register',
+      headers: {'Content-Type': 'application/json'},
+      data: {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+        birthday_date: birthdayDate,
+        location: selectedUF,
+        topic: topic 
+      }
+    };
+
+    api.request(options).then(function (response) {
+      console.log(response.data);
+      history.push('/login');
+    }).catch(function (error) {
+      console.error(error);
+    });
+  }
 
   return (
     <Page title="Entre na sua conta" className="page--register">
@@ -59,6 +91,7 @@ function SecondStep() {
             placeholder="Digite aqui a sua senha"
             label="Senha"
             className="my-4"
+            onChange={e => setPassword(e.target.value)}
           />
           <Field
             type="password"
@@ -88,7 +121,7 @@ function SecondStep() {
           <Link className="button__goBack mb-4 font-weight-normal" to="/">
             voltar
           </Link>
-          <Button label="Finalizar" nextRoute="/" />
+          <Button label="Finalizar" onClick={finalizar}/>
         </div>
       </div>
     </Page>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Page from '~/components/Page';
 import Field from '~/components/UI/Input/Field';
@@ -9,6 +9,7 @@ import api from '~/services/api';
 import './styles.scss';
 
 function Login() {
+  const history = useHistory();
   const [email, setEmail] = React.useState('');
   const [senha, setSenha] = React.useState('');
 
@@ -25,6 +26,7 @@ function Login() {
       .then(function (response) {
         console.log(response.data);
         localStorage.setItem('token', response.data.data.token);
+        history.push('/');
       })
       .catch(function (error) {
         console.error(error);
