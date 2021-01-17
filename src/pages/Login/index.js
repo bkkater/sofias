@@ -9,25 +9,26 @@ import api from '~/services/api';
 import './styles.scss';
 
 function Login() {
+  const [email, setEmail] = React.useState('');
+  const [senha, setSenha] = React.useState('');
 
-  const [email, setEmail] = React.useState("");
-  const [senha, setSenha] = React.useState("");
-
-  function login() {
-
+  function handleLogin() {
     const options = {
       method: 'POST',
       url: '/auth/login',
-      headers: {'Content-Type': 'application/json'},
-      data: {email: email, password: senha}
+      headers: { 'Content-Type': 'application/json' },
+      data: { email: email, password: senha },
     };
 
-    api.request(options).then(function (response) {
-      console.log(response.data);
-      localStorage.setItem("token", response.data.data.token);
-    }).catch(function (error) {
-      console.error(error);
-    });
+    api
+      .request(options)
+      .then(function (response) {
+        console.log(response.data);
+        localStorage.setItem('token', response.data.data.token);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
   }
 
   return (
@@ -56,8 +57,7 @@ function Login() {
           <Link className="button__goBack mb-4 font-weight-normal" to="/">
             voltar
           </Link>
-          { /* <Button label="Acessar" nextRoute="/" /> */}
-          <p onClick={login}>Acessar</p>
+          <Button label="Acessar" nextRoute="/" onClick={handleLogin} />
         </div>
       </div>
     </Page>

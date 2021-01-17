@@ -56,6 +56,22 @@ function SecondStep() {
             label="Senha"
             className="my-4"
           />
+
+          <div>
+            <h6>Termos e condições</h6>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDisabled"
+                id="flexRadioDisabled"
+              />
+              <label class="form-check-label" for="flexRadioDisabled">
+                Concordo que li e aceito os <b>termos e condições</b> de
+                utilização do Sofias.
+              </label>
+            </div>
+          </div>
         </div>
 
         <div className="d-flex flex-column align-items-center mb-4">
