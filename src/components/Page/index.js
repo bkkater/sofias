@@ -11,12 +11,11 @@ const Page = ({ className, title, children }) => {
     <>
       <Background />
       <div
-        className={`container page d-flex flex-column flex-fill py-4 px-3 ${className}`}
+        className={`container page d-flex flex-column flex-fill pt-4 px-3 pb-0 ${className}`}
       >
         {title && (
           <>
             <Header />
-
             <Head>
               <title>Sofias - {title}</title>
             </Head>

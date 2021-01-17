@@ -1,12 +1,12 @@
-import React from "react";
-import { FiArrowRight, FiSearch } from "react-icons/fi";
+import React from 'react';
+import { FiArrowRight, FiSearch } from 'react-icons/fi';
 
-import "./styles.scss";
+import './styles.scss';
 
 function Search() {
   return (
-    <div className="d-flex align-items-center justify-content-center mt-4">
-      <div className="input d-flex align-items-center">
+    <div className="d-flex align-items-center  justify-content-center mt-4">
+      <div className="input d-flex align-items-center flex-fill">
         <FiSearch size={20} color="a599b5" />
         <input placeholder="Procurar por áreas..." />
       </div>
