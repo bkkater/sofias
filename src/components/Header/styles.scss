@@ -1,10 +1,19 @@
-span {
-  font-family: "Montserrat";
-  font-size: 1rem;
+.header__content {
+  span {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+  }
+
+  a {
+    font-weight: 700;
+    color: black !important;
+    text-decoration: underline !important;
+  }
 }
 
-a {
-  font-weight: 700;
-  color: black !important;
-  text-decoration: underline !important;
+.fullLogo {
+  width: 186px;
+  height: 33px;
+
+  align-self: center;
 }
