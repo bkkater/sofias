@@ -1,18 +1,61 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Page from '~/components/Page';
 import Card from '~/components/UI/Card';
 import Search from '~/components/UI/Input/Search';
 
 import { cardList } from '~/resources/utils/cardList';
+import card01 from '~/resources/assets/Card/card01.png';
 
 import cardImage from '~/resources/assets/Card/card-fullWidth01.png';
 
 import './styles.scss';
 import LocationCard from '~/components/UI/LocationCard';
+import base64 from "base-64";
+import {useHistory} from 'react-router-dom';
+import api from "~/services/api";
 
 function Home() {
-  const [isLogged, setLogged] = useState(true);
+  const history = useHistory(); 
+  const [isLogged, setLogged] = useState(false);
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+    if(token == null) {
+      setLogged(false);
+    } else {
+      let decoded = base64.decode(token.split(".")[1]);
+      let expiration = JSON.parse(decoded).exp;
+      let timestamp = new Date().getTime();
+      if(expiration > timestamp) {
+        window.alert('Token expirou');
+        history.push('/login');
+      } else {
+        setLogged(true);
+      }
+    }
+  }, [history]);
+
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+    if(isLogged) {
+      const options = {
+        method: 'GET',
+        url: '/course/courses',
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      };
+
+      api.request(options).then(function (response) {
+        console.log(response.data);
+        setCards(response.data.data);
+      }).catch(function (error) {
+        console.error(error);
+      });
+    }
+  }, [isLogged]);
 
   return (
     <Page
@@ -25,11 +68,11 @@ function Home() {
 
           {isLogged && <h5 className="mt-4">Recomendados</h5>}
           <div className="d-flex mt-3 mb-3 card__list">
-            {cardList.map((cardList) => (
+            {cards.map((cardList) => (
               <Card
-                label={cardList.label}
-                key={cardList.id}
-                image={cardList.image}
+                label={cardList.title}
+                key={cardList._id}
+                image={card01}
               />
             ))}
           </div>
