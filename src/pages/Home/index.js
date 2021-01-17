@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import Page from "~/components/Page";
+import Search from "~/components/UI/Input/Search";
+
+import "./styles.scss";
 
 function Home() {
   return (
-    <div className="page-home">
-      <h1>Olá</h1>
-    </div>
+    <Page title="Escolha uma área">
+      <Search />
+    </Page>
   );
 }
 
