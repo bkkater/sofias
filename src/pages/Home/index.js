@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Page from '~/components/Page';
 import Card from '~/components/UI/Card';
@@ -26,11 +27,16 @@ function Home() {
           {isLogged && <h5 className="mt-4">Recomendados</h5>}
           <div className="d-flex mt-3 mb-3 card__list">
             {cardList.map((cardList) => (
-              <Card
-                label={cardList.label}
-                key={cardList.id}
-                image={cardList.image}
-              />
+              <Link
+                to={{ pathname: '/detail/course', state: { cardList } }}
+                className="mr-4"
+              >
+                <Card
+                  label={cardList.label}
+                  key={cardList.id}
+                  image={cardList.image}
+                />
+              </Link>
             ))}
           </div>
 
@@ -43,7 +49,10 @@ function Home() {
         </div>
 
         <div className="d-flex card__location__container mb-4 mt-5 justify-content-center">
-          <LocationCard />
+          <LocationCard
+            label="Escolha a sua localização"
+            description="vamos oferecer conteúdos melhores para você"
+          />
         </div>
       </div>
     </Page>
