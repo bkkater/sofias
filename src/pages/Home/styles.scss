@@ -6,6 +6,19 @@
   }
 
   .card {
+    &__popular-type {
+      width: 148px;
+      height: 48px;
+      background: linear-gradient(
+        180deg,
+        rgba(87, 10, 169, 0.792) 0%,
+        rgba(78, 20, 140, 0.828) 100%
+      );
+      border-radius: 5px;
+
+      color: #fff;
+    }
+
     &__item {
       padding-top: 2px;
     }
