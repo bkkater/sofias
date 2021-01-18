@@ -96,8 +96,8 @@ function Home() {
               <div>
                 <h5 className="mt-4">Popular</h5>
 
-                <div className="d-flex align-items-center justify-content-between mb-3 mt-3">
-                  <div className="card__popular-type d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center mb-3 mt-3">
+                  <div className="card__popular-type d-flex align-items-center justify-content-center mr-3">
                     Podcasts
                   </div>
                   <div className="card__popular-type d-flex align-items-center justify-content-center mr-4">
@@ -105,8 +105,8 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="d-flex align-items-center justify-content-between mb-3">
-                  <div className="card__popular-type d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center mb-3">
+                  <div className="card__popular-type d-flex align-items-center justify-content-center mr-3">
                     Artigos
                   </div>
                   <div className="card__popular-type d-flex align-items-center justify-content-center mr-4">

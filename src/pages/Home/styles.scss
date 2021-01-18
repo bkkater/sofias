@@ -5,6 +5,13 @@
     font-size: 1.2rem;
   }
 
+  .button__container {
+    &:hover {
+      color: white !important;
+      text-align: none !important;
+    }
+  }
+
   .card {
     &__popular-type {
       width: 148px;
