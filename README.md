@@ -15,7 +15,6 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-6CBAD9?style=for-the-badge">
 </p>
 
-Descrição
 <p>
    Sofias é uma plataforma aberta de atração de mulheres jovens que educa, forma e desenvolve competências e habilidades essenciais para o mercado do futuro. 
 
@@ -56,9 +55,11 @@ Descrição
 # :computer: Tecnologias
 Esse projeto foi feito utilizando as seguintes tecnologias:
 <details>
-  <summary>Mobile</summary>
+  <summary>Web</summary>
 
 -   [React](https://pt-br.reactjs.org/)
+-   [Bootstrap](https://getbootstrap.com/)
+-   [SASS](https://sass-lang.com/)
 -   [Javascript](https://www.javascript.com/)
 -   [Axios](https://www.npmjs.com/package/axios)
 -   [VS Code](https://code.visualstudio.com/)
