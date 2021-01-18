@@ -33,7 +33,7 @@
 * [Funcionalidades](#rocket-funcionalidades)
 * [Repositórios](#computer-repositorios)
 * [Como rodar](#construction_worker-como-rodar)
-* [Equipe](#:bulb:#equipe)
+* [Equipe](:bulb:#equipe)
 
 ## 📥 Layout disponivel em:  
 <p align="center">
