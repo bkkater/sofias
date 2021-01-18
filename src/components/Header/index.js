@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FiMenu } from 'react-icons/fi';
+import { FiMenu, FiUser } from 'react-icons/fi';
 import { Link, useLocation } from 'react-router-dom';
 
 import logo from '~/resources/assets/logo.png';
@@ -26,9 +26,13 @@ function Header() {
         <img src={logo} alt="Sofias" className="ml-3" />
       </div>
 
-      <span>
-        Já tem conta? <Link to="/login">Acessar</Link>
-      </span>
+      {!localStorage.getItem('token') && (
+        <span>
+          Já tem conta? <Link to="/login">Acessar</Link>
+        </span>
+      )}
+
+      {localStorage.getItem('token') && <FiUser color="black" size={24} />}
     </div>
   );
 }
