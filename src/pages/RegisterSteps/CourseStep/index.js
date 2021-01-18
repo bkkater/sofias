@@ -15,7 +15,7 @@ function Course({ location }) {
   const cardItem = location.state.cardList;
 
   return (
-    <Page className="page--detail-course" title=" ">
+    <Page className="page--register-course" title=" ">
       <div className="d-flex flex-column justify-content-between flex-fill">
         <Card
           description={cardDescription}
