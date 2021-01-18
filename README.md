@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./assets/logo.png" width="280"/>
+   <img src="docs/images/logo.png" width="280"/>
 </p>
 
 <p align="center">	
@@ -16,7 +16,12 @@
 </p>
 
 Descrição
+<p>
+   Sofias é uma plataforma aberta de atração de mulheres jovens que educa, forma e desenvolve competências e habilidades essenciais para o mercado do futuro. 
 
+   Nosso objetivo principal é ajudar a preencher a lacuna de gênero no mercado de trabalho e criar uma comunidade segura online e offline, capacitando, conectando e apoiando mulheres entre 15 e 25 anos que buscam qualificação profissional.
+     
+</p>
 <div align="center">
   <sub>Built by
     <a>Sofias</a>
@@ -34,17 +39,17 @@ Descrição
 * [Equipe](#bulb-Equipe)
 
 
-
 ## 📥 Layout disponivel em:  
 <p align="center">
-    <a title=".fig Mobile" href="https://www.figma.com/file/COuTfekgKpb2bBdkCH9gVe/Casa-Optimize?node-id=0%3A1">
+    <a title=".fig Mobile" href="https://www.figma.com/file/3e0h6CswoR3MqB7VDcjGdr/Sofias?node-id=0%3A1">
         <img alt="Figma" src="https://img.shields.io/badge/Versão Web-black?style=flat-square&logo=figma&logoColor=red" width="215px"/>
     </a>
 </p>
 
+
 ### Mobile Screenshot
 <div style="display: flex; flex-direction: 'row';">
-   <img src="./.github/mockup.png" width="360">
+   <img src="docs/images/home.png" width="360">
 </div>
 
 
@@ -62,13 +67,15 @@ Esse projeto foi feito utilizando as seguintes tecnologias:
 
 # :rocket: Funcionalidades
 
-- Funcionalidade 1.
+- Login Integrado com Backend.
 
-- Funcionalidade 2.
+- Cadastro integrado com backend.
+
+- Tela Home com os cursos vindo da Rota /course/courses.
 
 
 # :computer: Repositórios
--   [API](https://github.com)
+-   [API](https://github.com/rodrigoatemoteo/sofias-backend)
 
 # :construction_worker: Como rodar
 ```bash
