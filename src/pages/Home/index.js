@@ -77,7 +77,7 @@ function Home() {
               <Link
                 to={
                   isLogged
-                    ? { pathname: '/detail/course', state: { cardList } }
+                    ? { pathname: '/', state: { cardList } }
                     : { pathname: '/register/course', state: { cardList } }
                 }
                 className="mr-4"
