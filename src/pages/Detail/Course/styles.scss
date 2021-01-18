@@ -5,6 +5,18 @@
     }
   }
 
+  .button__goBack {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
   .card__item {
     height: auto;
     margin-right: 0;
