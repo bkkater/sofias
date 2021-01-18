@@ -31,12 +31,9 @@
 
 * [Tecnologias](#computer-tecnologias)
 * [Funcionalidades](#rocket-funcionalidades)
-* [Repositórios](#computer-Repositórios)
+* [Repositórios](#computer-repositorios)
 * [Como rodar](#construction_worker-como-rodar)
-* [Equipe](#equipe)
-* [License](#closed_book-license)
-* [Equipe](#bulb-Equipe)
-
+* [Equipe](#:bulb:#equipe)
 
 ## 📥 Layout disponivel em:  
 <p align="center">
@@ -68,11 +65,7 @@ Esse projeto foi feito utilizando as seguintes tecnologias:
 
 # :rocket: Funcionalidades
 
-- Login Integrado com Backend.
-
-- Cadastro integrado com backend.
-
-- Tela Home com os cursos vindo da Rota /course/courses.
+- <strong>Educa</strong>, <strong>forma</strong> e <strong>desenvolve</strong> competências e habilidades essenciais para o mercado de trabalho 
 
 
 # :computer: Repositórios
