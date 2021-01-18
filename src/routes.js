@@ -5,6 +5,7 @@ import Home from '~/pages/Home';
 import Login from '~/pages/Login';
 import Register from './pages/RegisterSteps';
 import SecondStep from './pages/RegisterSteps/SecondStep';
+import CourseStep from './pages/RegisterSteps/CourseStep';
 import Course from './pages/Detail/Course';
 
 function Routes() {
@@ -14,6 +15,7 @@ function Routes() {
       <Route path="/login" component={Login} />
       <Route path="/register" exact component={Register} />
       <Route path="/register/step" exact component={SecondStep} />
+      <Route path="/register/course" exact component={CourseStep} />
       <Route path="/detail/course" exact component={Course} />
     </BrowserRouter>
   );
